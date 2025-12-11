@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bolão TGA - Palpites</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Bolão TGA INSANo</h1>
+    </header>
+
+    <nav>
+      <button onclick="go('home')">Home</button>
+      <button onclick="go('player1')">Palpite — Gusstoso</button>
+      <button onclick="go('player2')">Palpite — Vik</button>
+      <button onclick="go('player3')">Palpite — Cassi</button>
+      <button onclick="go('gabarito')">Gabarito </button>
+    </nav>
+
+    <div class="grid">
+      <main id="main" class="card">
+      </main>
+
+      <aside class="card">
+        <h3>Placar</h3>
+        <div id="scoreboard" class="scoreboard small">
+        </div>
+
+        <h3 style="margin-top:12px">Export / Import</h3>
+        <div class="controls">
+          <button onclick="exportAll()">Exportar JSON</button>
+          <button onclick="clearAll(true)">Limpar tudo</button>
+          <textarea id="importArea" placeholder='Cole aqui o JSON exportado e aperte "Importar"'></textarea>
+          <div style="display:flex;gap:8px"><button onclick="importAll()">Importar</button><button onclick="computeScores()">Recalcular</button></div>
+        </div>
+      </aside>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

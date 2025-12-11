@@ -1,0 +1,24 @@
+ :root{--bg:#0f1724;--card:#0b1220;--accent:#00b050;--muted:#9aa6b2;--glass: rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Arial; margin:0; background:linear-gradient(180deg,#071026 0%, #081226 60%); color:#e6eef6; min-height:100vh}
+    .container{max-width:1100px;margin:32px auto;padding:20px}
+    header{display:flex;align-items:center;gap:16px}
+    header h1{margin:0;font-size:20px}
+    nav{margin-top:14px;display:flex;gap:8px;flex-wrap:wrap}
+    button, .link{background:var(--card);border:1px solid rgba(255,255,255,0.04);color:inherit;padding:10px 14px;border-radius:10px;cursor:pointer}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:18px}
+    .card{background:var(--card);padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .category{margin-bottom:12px}
+    .category h3{margin:0 0 8px 0;font-size:15px}
+    .options{display:flex;flex-wrap:wrap;gap:8px}
+    .option{width:calc(50% - 8px); background:var(--glass); padding:8px;border-radius:8px;display:flex;gap:8px;align-items:center}
+    .option img{width:56px;height:56px;object-fit:cover;border-radius:8px;background:#0b1220}
+    .option label{flex:1}
+    .small{font-size:13px;color:var(--muted)}
+    .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    footer{margin-top:20px;color:var(--muted);font-size:13px}
+    .scoreboard{display:flex;flex-direction:column;gap:8px}
+    .scoreline{display:flex;justify-content:space-between;padding:8px 10px;border-radius:8px;background:rgba(0,0,0,0.12)}
+    .controls{display:flex;flex-direction:column;gap:8px}
+    textarea{width:100%;height:140px;background:#071322;border:1px solid rgba(255,255,255,0.03);color:inherit;padding:8px;border-radius:8px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
