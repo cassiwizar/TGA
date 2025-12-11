@@ -266,7 +266,6 @@ const DATA = {
       <ul class="small">
         <li>Ganhador do <strong>Jogo do Ano</strong> vale <strong>3 pontos</strong>.</li>
         <li>Todas as outras categorias valem <strong>1 ponto</strong>.</li>
-        <li>Salvamento local no navegador (localStorage). Use Export/Import para backup.</li>
       </ul>
     `}
 
